@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Función asincrónica para cargar datos desde la API
     async function cargarRestaurantesDesdeAPI() {
       try {
-        const response = await fetch("https://recruiting-datasets.s3.us-east-2.amazonaws.com/data_melp.json");
+        const response = await fetch('https://cors-anywhere.herokuapp.com/https://recruiting-datasets.s3.us-east-2.amazonaws.com/data_melp.json');
         if (!response.ok) {
           throw new Error("Error al cargar datos de la API");
         }
