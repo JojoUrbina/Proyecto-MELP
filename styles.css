@@ -1,0 +1,11 @@
+.sidebar {
+    width: 25%;
+    padding: 1rem;
+    background-color: #f7f7f7;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
