@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Función asincrónica para cargar datos desde la API
     async function cargarRestaurantesDesdeAPI() {
       try {
-        const response = await fetch("http://localhost:3000/api/data");
+        const response = await fetch("https://recruiting-datasets.s3.us-east-2.amazonaws.com/data_melp.json");
         if (!response.ok) {
           throw new Error("Error al cargar datos de la API");
         }
@@ -142,6 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
       version: "v18.0",
     });
   };
+  
   document.addEventListener("DOMContentLoaded", function () {
     // Configura las coordenadas iniciales y el zoom del mapa
     const coordenadasIniciales = { lat: 40.7128, lng: -74.0060 }; // Nueva York, por ejemplo
@@ -153,3 +154,4 @@ document.addEventListener("DOMContentLoaded", function () {
       zoom: zoomInicial,
     });
   });
+  
