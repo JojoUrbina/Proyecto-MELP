@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     let restaurantes = []; // Variable global para almacenar todos los restaurantes
     let paginaActual = 1;
-    const restaurantesPorPagina = 13; // 13 restaurantes por página en pantallas grandes
+    const restaurantesPorPagina = 13; // 13 restaurantes por página 
   
     // Función asincrónica para cargar datos desde la API
     async function cargarRestaurantesDesdeAPI() {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
           throw new Error("Error al cargar datos de la API");
         }
         const data = await response.json();
-        restaurantes = data; // Almacena los datos de restaurantes en la variable global
+        restaurantes = data; // Datos de restaurantes en la variable global
         mostrarRestaurantesPagina(restaurantes, paginaActual);
         mostrarPaginacion(restaurantes);
       } catch (error) {
@@ -137,15 +137,15 @@ document.addEventListener("DOMContentLoaded", function () {
   
   window.fbAsyncInit = function () {
     FB.init({
-      appId: "1368712017404923", // Reemplaza con tu ID de aplicación de Facebook
+      appId: "1368712017404923", //  ID de aplicación de Facebook
       xfbml: true,
       version: "v18.0",
     });
   };
   
   document.addEventListener("DOMContentLoaded", function () {
-    // Configura las coordenadas iniciales y el zoom del mapa
-    const coordenadasIniciales = { lat: 40.7128, lng: -74.0060 }; // Nueva York, por ejemplo
+    // Coordenadas iniciales y el zoom del mapa
+    const coordenadasIniciales = { lat: 40.7128, lng: -74.0060 }; // Nueva York
     const zoomInicial = 12;
   
     // Inicializa el mapa
