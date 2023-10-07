@@ -142,3 +142,14 @@ document.addEventListener("DOMContentLoaded", function () {
       version: "v18.0",
     });
   };
+  document.addEventListener("DOMContentLoaded", function () {
+    // Configura las coordenadas iniciales y el zoom del mapa
+    const coordenadasIniciales = { lat: 40.7128, lng: -74.0060 }; // Nueva York, por ejemplo
+    const zoomInicial = 12;
+  
+    // Inicializa el mapa
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: coordenadasIniciales,
+      zoom: zoomInicial,
+    });
+  });
